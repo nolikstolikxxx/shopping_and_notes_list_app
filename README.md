@@ -57,15 +57,15 @@ This project was created to practice:
 
 #### Notes Flow
 
-<img src="https://github.com/nolikstolikxxx/shoppingAndNotesListApp/blob/main/screenshots/Video_1_App_Notes.gif" alt="gif" width="360" height="800">
+<img src="screenshots/Video_1_App_Notes.gif" alt="gif" width="360" >
 
 #### Shopping Lists Flow
 
-<img src="https://github.com/nolikstolikxxx/shoppingAndNotesListApp/blob/main/screenshots/Video_2_App_ShopList.gif" alt="gif" width="360" height="800">
+<img src="screenshots/Video_2_App_ShopList.gif" alt="gif" width="360" >
 
 #### Settings Flow
 
-<img src="https://github.com/nolikstolikxxx/shoppingAndNotesListApp/blob/main/screenshots/Video_3_App_Settings.gif" alt="gif" width="360" height="800">
+<img src="screenshots/Video_3_App_Settings.gif" alt="gif" width="360" >
 
 ### 📝 Notes
 
@@ -157,27 +157,30 @@ The app follows a simplified layered architecture:
 
 ## 📁 Project Structure
 
+```text
 com.example.shoppingAndNotesListApp
 ├── core
-│ ├── billing
-│ ├── preferences
-│ └── utils
+│   ├── billing
+│   ├── preferences
+│   └── utils
 │
 ├── data
-│ ├── db
-│ │ ├── dao
-│ │ └── database
-│ ├── model
-│ └── repository
+│   ├── db
+│   │   ├── dao
+│   │   └── database
+│   ├── model
+│   └── repository
 │
 ├── ui
-│ ├── activities
-│ ├── fragments
-│ ├── adapters
-│ ├── dialogs
-│ └── viewmodel
+│   ├── activities
+│   ├── fragments
+│   ├── adapters
+│   ├── dialogs
+│   └── viewmodel
 │
 └── settings
+```
+
 
 ---
 
