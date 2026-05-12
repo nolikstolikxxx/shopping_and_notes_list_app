@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface"
+    tools:context=".ui.activities.NoteActivity">
+
+    <!-- Toolbar -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimaryContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:navigationIconTint="?attr/colorOnPrimaryContainer"
+        app:titleTextColor="?attr/colorOnPrimaryContainer" />
+
+    <!-- Color Picker (under Toolbar) -->
+    <LinearLayout
+        android:id="@+id/colorPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorSurfaceContainerHigh"
+        android:elevation="6dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_color_picker"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+            <TableRow>
+
+                <ImageButton
+                    android:id="@+id/ibRed"
+                    android:layout_width="@dimen/color_picker_size"
+                    android:layout_height="@dimen/color_picker_size"
+                    android:layout_margin="@dimen/color_picker_margin"
+                    android:background="@drawable/picker_red_selector"
+                    android:contentDescription="@string/red"
+                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                <ImageButton
+                    android:id="@+id/ibGreen"
+                    android:layout_width="@dimen/color_picker_size"
+                    android:layout_height="@dimen/color_picker_size"
+                    android:layout_margin="@dimen/color_picker_margin"
+                    android:background="@drawable/picker_green_selector"
+                    android:contentDescription="@string/green"
+                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                <ImageButton
+                    android:id="@+id/ibBlue"
+                    android:layout_width="@dimen/color_picker_size"
+                    android:layout_height="@dimen/color_picker_size"
+                    android:layout_margin="@dimen/color_picker_margin"
+                    android:background="@drawable/picker_blue_selector"
+                    android:contentDescription="@string/blue"
+                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+            </TableRow>
+
+            <TableRow>
+
+                <ImageButton
+                    android:id="@+id/ibYellow"
+                    android:layout_width="@dimen/color_picker_size"
+                    android:layout_height="@dimen/color_picker_size"
+                    android:layout_margin="@dimen/color_picker_margin"
+                    android:background="@drawable/picker_yellow_selector"
+                    android:contentDescription="@string/yellow"
+                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                <ImageButton
+                    android:id="@+id/ibBlack"
+                    android:layout_width="@dimen/color_picker_size"
+                    android:layout_height="@dimen/color_picker_size"
+                    android:layout_margin="@dimen/color_picker_margin"
+                    android:background="@drawable/picker_black_selector"
+                    android:contentDescription="@string/black"
+                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                <ImageButton
+                    android:id="@+id/ibOrange"
+                    android:layout_width="@dimen/color_picker_size"
+                    android:layout_height="@dimen/color_picker_size"
+                    android:layout_margin="@dimen/color_picker_margin"
+                    android:background="@drawable/picker_orange_selector"
+                    android:contentDescription="@string/orange"
+                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <!-- Card -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardNote"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/margin_card"
+        app:cardBackgroundColor="?attr/colorPrimaryContainer"
+        app:cardCornerRadius="@dimen/corner_radius_card"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/colorPicker"
+        app:strokeColor="?attr/colorOutlineVariant"
+        app:strokeWidth="1dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/padding_inner_card">
+
+            <!-- Title -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/titleInputLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/title_hint"
+                app:boxBackgroundColor="?attr/colorSurface"
+                app:boxBackgroundMode="filled"
+                app:hintTextColor="?attr/colorOnSurfaceVariant"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?attr/textAppearanceTitleMedium"
+                    android:textColor="?attr/colorOnSurface" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Description -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/descriptionInputLayout"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:hint="@string/description_hint"
+                app:boxBackgroundColor="?attr/colorSurface"
+                app:hintTextColor="?attr/colorOnSurfaceVariant"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/titleInputLayout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:textAppearance="?attr/textAppearanceBodyMedium"
+                    android:textColor="?attr/colorOnSurface"
+                    android:textColorHint="?attr/colorOnSurfaceVariant" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

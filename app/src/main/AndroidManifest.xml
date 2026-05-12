@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Internet is required for Ads & Billing -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".ui.activities.MainApp"
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:enableOnBackInvokedCallback="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.shoppingAndNotesListApp"
+        tools:targetApi="33">
+
+        <!-- ================= MAIN ENTRY ================= -->
+        <activity
+            android:name=".ui.activities.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- ================= FEATURES ================= -->
+
+        <!-- Notes screen -->
+        <activity
+            android:name=".ui.activities.NoteActivity"
+            android:exported="true"
+            android:label="@string/notes"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+
+        <!-- Shopping list screen -->
+        <activity
+            android:name=".ui.activities.ShopListActivity"
+            android:exported="true"
+            android:label="@string/shop_list" />
+
+        <!-- Settings screen -->
+        <activity
+            android:name=".settings.SettingsActivity"
+            android:exported="true"
+            android:label="@string/settings"
+            android:theme="@style/Theme.shoppingAndNotesListApp" />
+
+        <!-- ================= ADS ================= -->
+
+        <!-- Test AdMob App ID (safe for GitHub) -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+    </application>
+
+</manifest>

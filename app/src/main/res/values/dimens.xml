@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Typographic sizes (sp) -->
+    <dimen name="text_size_body_large">18sp</dimen>
+    <dimen name="text_size_body_medium">16sp</dimen>
+    <dimen name="text_size_body_small">14sp</dimen>
+
+    <!-- CardView -->
+    <dimen name="margin_card">8dp</dimen>
+    <dimen name="corner_radius_card">12dp</dimen>
+    <dimen name="padding_inner_card">12dp</dimen>
+    <dimen name="padding_between_fields">8dp</dimen>
+
+    <!-- Color picker -->
+    <dimen name="color_picker_size">40dp</dimen>
+    <dimen name="color_picker_margin">4dp</dimen>
+    <dimen name="padding_color_picker">6dp</dimen>
+
+    <!-- If global coefficients are needed later, scale variables can be added. -->
+</resources>

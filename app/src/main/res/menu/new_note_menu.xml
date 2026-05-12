@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/color"
+        android:icon="@drawable/ic_color_style_surface"
+        android:orderInCategory="1"
+        android:title="@string/color"
+        app:iconTint="?attr/colorOnPrimaryContainer"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/bold"
+        android:icon="@drawable/ic_bold"
+        android:orderInCategory="2"
+        android:title="@string/bold"
+        app:iconTint="?attr/colorOnPrimaryContainer"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/save"
+        android:icon="@drawable/ic_save"
+        android:orderInCategory="3"
+        android:title="@string/save"
+        app:iconTint="?attr/colorOnPrimaryContainer"
+        app:showAsAction="ifRoom" />
+</menu>

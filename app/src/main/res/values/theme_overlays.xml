@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- BlueGray contrast overlays -->
+    <style name="ThemeOverlay.Theme.BlueGray.MediumContrast" parent="ThemeOverlay.Material3.ActionBar">
+        <item name="colorPrimary">@color/md_theme_primary_mediumContrast</item>
+        <item name="colorOnPrimary">@color/md_theme_onPrimary_mediumContrast</item>
+        <item name="colorPrimaryContainer">@color/md_theme_primaryContainer_mediumContrast</item>
+        <item name="colorOnPrimaryContainer">@color/md_theme_onPrimaryContainer_mediumContrast
+        </item>
+        <item name="android:colorBackground">@color/md_theme_background_mediumContrast</item>
+        <item name="colorOnBackground">@color/md_theme_onBackground_mediumContrast</item>
+    </style>
+
+    <style name="ThemeOverlay.Theme.BlueGray.HighContrast" parent="ThemeOverlay.Material3.ActionBar">
+        <item name="colorPrimary">@color/md_theme_primary_highContrast</item>
+        <item name="colorOnPrimary">@color/md_theme_onPrimary_highContrast</item>
+        <item name="colorPrimaryContainer">@color/md_theme_primaryContainer_highContrast</item>
+        <item name="colorOnPrimaryContainer">@color/md_theme_onPrimaryContainer_highContrast</item>
+        <item name="android:colorBackground">@color/md_theme_background_highContrast</item>
+        <item name="colorOnBackground">@color/md_theme_onBackground_highContrast</item>
+    </style>
+
+    <!-- Deep Orange contrast overlays -->
+    <style name="ThemeOverlay.Theme.DeepOrange.MediumContrast" parent="ThemeOverlay.Material3.ActionBar">
+        <item name="colorPrimary">@color/do_theme_primary_mediumContrast</item>
+        <item name="colorOnPrimary">@color/do_theme_onPrimary_mediumContrast</item>
+        <item name="colorPrimaryContainer">@color/do_theme_primaryContainer_mediumContrast</item>
+        <item name="colorOnPrimaryContainer">@color/do_theme_onPrimaryContainer_mediumContrast
+        </item>
+        <item name="android:colorBackground">@color/do_theme_background_mediumContrast</item>
+        <item name="colorOnBackground">@color/do_theme_onBackground_mediumContrast</item>
+    </style>
+
+    <style name="ThemeOverlay.Theme.DeepOrange.HighContrast" parent="ThemeOverlay.Material3.ActionBar">
+        <item name="colorPrimary">@color/do_theme_primary_highContrast</item>
+        <item name="colorOnPrimary">@color/do_theme_onPrimary_highContrast</item>
+        <item name="colorPrimaryContainer">@color/do_theme_primaryContainer_highContrast</item>
+        <item name="colorOnPrimaryContainer">@color/do_theme_onPrimaryContainer_highContrast</item>
+        <item name="android:colorBackground">@color/do_theme_background_highContrast</item>
+        <item name="colorOnBackground">@color/do_theme_onBackground_highContrast</item>
+    </style>
+
+    <!-- Indigo contrast overlays -->
+    <style name="ThemeOverlay.Theme.Indigo.MediumContrast" parent="ThemeOverlay.Material3.ActionBar">
+        <item name="colorPrimary">@color/in_theme_primary_mediumContrast</item>
+        <item name="colorOnPrimary">@color/in_theme_onPrimary_mediumContrast</item>
+        <item name="colorPrimaryContainer">@color/in_theme_primaryContainer_mediumContrast</item>
+        <item name="colorOnPrimaryContainer">@color/in_theme_onPrimaryContainer_mediumContrast
+        </item>
+        <item name="android:colorBackground">@color/in_theme_background_mediumContrast</item>
+        <item name="colorOnBackground">@color/in_theme_onBackground_mediumContrast</item>
+    </style>
+
+    <style name="ThemeOverlay.Theme.Indigo.HighContrast" parent="ThemeOverlay.Material3.ActionBar">
+        <item name="colorPrimary">@color/in_theme_primary_highContrast</item>
+        <item name="colorOnPrimary">@color/in_theme_onPrimary_highContrast</item>
+        <item name="colorPrimaryContainer">@color/in_theme_primaryContainer_highContrast</item>
+        <item name="colorOnPrimaryContainer">@color/in_theme_onPrimaryContainer_highContrast</item>
+        <item name="android:colorBackground">@color/in_theme_background_highContrast</item>
+        <item name="colorOnBackground">@color/in_theme_onBackground_highContrast</item>
+    </style>
+
+    <!-- Lime contrast overlays -->
+    <style name="ThemeOverlay.Theme.Lime.MediumContrast" parent="ThemeOverlay.Material3.ActionBar">
+        <item name="colorPrimary">@color/li_theme_primary_mediumContrast</item>
+        <item name="colorOnPrimary">@color/li_theme_onPrimary_mediumContrast</item>
+        <item name="colorPrimaryContainer">@color/li_theme_primaryContainer_mediumContrast</item>
+        <item name="colorOnPrimaryContainer">@color/li_theme_onPrimaryContainer_mediumContrast
+        </item>
+        <item name="android:colorBackground">@color/li_theme_background_mediumContrast</item>
+        <item name="colorOnBackground">@color/li_theme_onBackground_mediumContrast</item>
+    </style>
+
+    <style name="ThemeOverlay.Theme.Lime.HighContrast" parent="ThemeOverlay.Material3.ActionBar">
+        <item name="colorPrimary">@color/li_theme_primary_highContrast</item>
+        <item name="colorOnPrimary">@color/li_theme_onPrimary_highContrast</item>
+        <item name="colorPrimaryContainer">@color/li_theme_primaryContainer_highContrast</item>
+        <item name="colorOnPrimaryContainer">@color/li_theme_onPrimaryContainer_highContrast</item>
+        <item name="android:colorBackground">@color/li_theme_background_highContrast</item>
+        <item name="colorOnBackground">@color/li_theme_onBackground_highContrast</item>
+    </style>
+
+    <!-- Dynamic theme overlays -->
+    <style name="ThemeOverlay.Theme.Dynamic.MediumContrast" parent="ThemeOverlay.Material3.DynamicColors.DayNight" />
+
+    <style name="ThemeOverlay.Theme.Dynamic.HighContrast" parent="ThemeOverlay.Material3.DynamicColors.DayNight" />
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Type of notes -->
+    <string-array name="note_style_array">
+        <item>Linear</item>
+        <item>Grid</item>
+    </string-array>
+    <string-array name="note_style_values">
+        <item>linear</item>
+        <item>grid</item>
+    </string-array>
+
+    <!-- Time format -->
+    <string-array name="time_format_array">
+        <item>12:59:59 – 31/12/2024</item>
+        <item>12:59:59 AM or PM – 2024/12/31</item>
+    </string-array>
+    <string-array name="time_format_values">
+        <item>HH:mm:ss – dd/MM/yyyy</item>
+        <item>h:mm:ss a – yyyy/MM/dd</item>
+    </string-array>
+
+    <!-- UI color theme -->
+    <string-array name="style_array">
+        <item>Blue gray</item>
+        <item>Deep orange</item>
+        <item>Indigo</item>
+        <item>Lime</item>
+        <!--<item>Dynamic (Material You)</item> -->
+    </string-array>
+
+    <string-array name="style_values">
+        <item>blue_gray</item>
+        <item>deep_orange</item>
+        <item>indigo</item>
+        <item>lime</item>
+        <!-- <item>dynamic</item> -->
+    </string-array>
+
+    <!-- Light / Dark / System Theme -->
+    <string-array name="theme_array">
+        <item>Light theme</item>
+        <item>Dark theme</item>
+        <item>Follow system</item>
+    </string-array>
+
+    <string-array name="theme_values">
+        <item>light</item>
+        <item>dark</item>
+        <item>system</item>
+    </string-array>
+
+    <!-- Font size -->
+    <string-array name="font_size_entries">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+
+    <string-array name="font_size_values">
+        <item>small</item>
+        <item>medium</item>
+        <item>large</item>
+    </string-array>
+
+    <!-- Text size -->
+    <string-array name="text_size_array">
+        <item>12 sp</item>
+        <item>14 sp</item>
+        <item>16 sp</item>
+        <item>18 sp</item>
+        <item>20 sp</item>
+    </string-array>
+
+    <string-array name="text_size_values">
+        <item>12</item>
+        <item>14</item>
+        <item>16</item>
+        <item>18</item>
+        <item>20</item>
+    </string-array>
+
+    <!-- Theme preview icons -->
+    <string-array name="style_array_icons">
+        <item>@drawable/ic_theme_blue_gray</item>
+        <item>@drawable/ic_theme_deep_orange</item>
+        <item>@drawable/ic_theme_indigo</item>
+        <item>@drawable/ic_theme_lime</item>
+        <item>@drawable/ic_theme_dynamic</item>
+    </string-array>
+</resources>

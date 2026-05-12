@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Night overlay options can be left empty or specify the same colors, since night/day are handled in colors.xml -->
+    <style name="ThemeOverlay.Theme.BlueGray.MediumContrast" parent="ThemeOverlay.Material3.ActionBar" />
+
+    <style name="ThemeOverlay.Theme.BlueGray.HighContrast" parent="ThemeOverlay.Material3.ActionBar" />
+
+    <style name="ThemeOverlay.Theme.DeepOrange.MediumContrast" parent="ThemeOverlay.Material3.ActionBar" />
+
+    <style name="ThemeOverlay.Theme.DeepOrange.HighContrast" parent="ThemeOverlay.Material3.ActionBar" />
+
+    <style name="ThemeOverlay.Theme.Indigo.MediumContrast" parent="ThemeOverlay.Material3.ActionBar" />
+
+    <style name="ThemeOverlay.Theme.Indigo.HighContrast" parent="ThemeOverlay.Material3.ActionBar" />
+
+    <style name="ThemeOverlay.Theme.Lime.MediumContrast" parent="ThemeOverlay.Material3.ActionBar" />
+
+    <style name="ThemeOverlay.Theme.Lime.HighContrast" parent="ThemeOverlay.Material3.ActionBar" />
+
+    <style name="ThemeOverlay.Theme.Dynamic.MediumContrast" parent="ThemeOverlay.Material3.DynamicColors.DayNight" />
+
+    <style name="ThemeOverlay.Theme.Dynamic.HighContrast" parent="ThemeOverlay.Material3.DynamicColors.DayNight" />
+</resources>

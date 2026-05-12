@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The main theme of the application -->
+    <style name="Theme.shoppingAndNotesListApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">?attr/colorSurface</item>
+
+        <item name="preferenceTheme">@style/MyPreferenceTheme</item>
+
+        <!-- Typography -->
+        <item name="textAppearanceBodyLarge">@style/TextAppearance.App.BodyLarge</item>
+        <item name="textAppearanceBodyMedium">@style/TextAppearance.App.BodyMedium</item>
+        <item name="textAppearanceBodySmall">@style/TextAppearance.App.BodySmall</item>
+
+        <!-- Popup menu -->
+        <item name="popupMenuStyle">@style/AppPopupMenu</item>
+
+        <!-- Alert Dialog -->
+        <item name="materialAlertDialogTheme">@style/AppDialog</item>
+
+        <!-- Customizing buttons -->
+        <item name="materialButtonStyle">@style/AppDialogButton</item>
+
+
+        <!-- Primary Colors Blue Gray (default) -->
+        <item name="colorPrimary">@color/md_theme_primary</item>
+        <item name="colorOnPrimary">@color/md_theme_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/md_theme_primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/md_theme_onPrimaryContainer</item>
+
+        <item name="colorSecondary">@color/md_theme_secondary</item>
+        <item name="colorOnSecondary">@color/md_theme_onSecondary</item>
+        <item name="colorSecondaryContainer">@color/md_theme_secondaryContainer</item>
+        <item name="colorOnSecondaryContainer">@color/md_theme_onSecondaryContainer</item>
+
+        <item name="android:colorBackground">@color/md_theme_background</item>
+        <item name="colorOnBackground">@color/md_theme_onBackground</item>
+
+        <item name="colorSurface">@color/md_theme_surface</item>
+        <item name="colorOnSurface">@color/md_theme_onSurface</item>
+        <item name="colorSurfaceVariant">@color/md_theme_surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/md_theme_onSurfaceVariant</item>
+
+        <item name="colorError">@color/md_theme_error</item>
+        <item name="colorOnError">@color/md_theme_onError</item>
+
+    </style>
+
+    <!-- Application palettes -->
+    <style name="Theme.shoppingAndNotesListApp.BlueGray" parent="Theme.shoppingAndNotesListApp" />
+    <!-- Deep Orange -->
+    <style name="Theme.shoppingAndNotesListApp.DeepOrange" parent="Theme.shoppingAndNotesListApp">
+        <item name="colorPrimary">@color/do_theme_primary</item>
+        <item name="colorOnPrimary">@color/do_theme_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/do_theme_primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/do_theme_onPrimaryContainer</item>
+
+        <item name="colorSecondary">@color/do_theme_secondary</item>
+        <item name="colorOnSecondary">@color/do_theme_onSecondary</item>
+        <item name="colorSecondaryContainer">@color/do_theme_secondaryContainer</item>
+        <item name="colorOnSecondaryContainer">@color/do_theme_onSecondaryContainer</item>
+
+        <item name="android:colorBackground">@color/do_theme_background</item>
+        <item name="colorOnBackground">@color/do_theme_onBackground</item>
+
+        <item name="colorSurface">@color/do_theme_surface</item>
+        <item name="colorOnSurface">@color/do_theme_onSurface</item>
+        <item name="colorSurfaceVariant">@color/do_theme_surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/do_theme_onSurfaceVariant</item>
+
+        <item name="colorError">@color/do_theme_error</item>
+        <item name="colorOnError">@color/do_theme_onError</item>
+    </style>
+
+    <!-- Indigo -->
+    <style name="Theme.shoppingAndNotesListApp.Indigo" parent="Theme.shoppingAndNotesListApp">
+        <item name="colorPrimary">@color/in_theme_primary</item>
+        <item name="colorOnPrimary">@color/in_theme_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/in_theme_primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/in_theme_onPrimaryContainer</item>
+
+        <item name="colorSecondary">@color/in_theme_secondary</item>
+        <item name="colorOnSecondary">@color/in_theme_onSecondary</item>
+        <item name="colorSecondaryContainer">@color/in_theme_secondaryContainer</item>
+        <item name="colorOnSecondaryContainer">@color/in_theme_onSecondaryContainer</item>
+
+        <item name="android:colorBackground">@color/in_theme_background</item>
+        <item name="colorOnBackground">@color/in_theme_onBackground</item>
+
+        <item name="colorSurface">@color/in_theme_surface</item>
+        <item name="colorOnSurface">@color/in_theme_onSurface</item>
+        <item name="colorSurfaceVariant">@color/in_theme_surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/in_theme_onSurfaceVariant</item>
+
+        <item name="colorError">@color/in_theme_error</item>
+        <item name="colorOnError">@color/in_theme_onError</item>
+    </style>
+
+    <!-- Lime -->
+    <style name="Theme.shoppingAndNotesListApp.Lime" parent="Theme.shoppingAndNotesListApp">
+        <item name="colorPrimary">@color/li_theme_primary</item>
+        <item name="colorOnPrimary">@color/li_theme_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/li_theme_primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/li_theme_onPrimaryContainer</item>
+
+        <item name="colorSecondary">@color/li_theme_secondary</item>
+        <item name="colorOnSecondary">@color/li_theme_onSecondary</item>
+        <item name="colorSecondaryContainer">@color/li_theme_secondaryContainer</item>
+        <item name="colorOnSecondaryContainer">@color/li_theme_onSecondaryContainer</item>
+
+        <item name="android:colorBackground">@color/li_theme_background</item>
+        <item name="colorOnBackground">@color/li_theme_onBackground</item>
+
+        <item name="colorSurface">@color/li_theme_surface</item>
+        <item name="colorOnSurface">@color/li_theme_onSurface</item>
+        <item name="colorSurfaceVariant">@color/li_theme_surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/li_theme_onSurfaceVariant</item>
+
+        <item name="colorError">@color/li_theme_error</item>
+        <item name="colorOnError">@color/li_theme_onError</item>
+    </style>
+
+    <!-- Dynamic Theme (Material You) -->
+    <style name="Theme.shoppingAndNotesListApp.Dynamic" parent="Theme.Material3.DynamicColors.DayNight" />
+</resources>

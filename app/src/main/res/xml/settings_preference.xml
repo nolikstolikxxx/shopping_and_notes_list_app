@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- General settings  -->
+    <PreferenceCategory
+        android:textColor="?attr/colorOnSecondaryContainer"
+        android:title="@string/general"
+        app:cardBackgroundColor="?attr/colorSecondaryContainer">
+
+        <ListPreference
+            android:defaultValue="linear"
+            android:entries="@array/note_style_array"
+            android:entryValues="@array/note_style_values"
+            android:icon="@drawable/ic_note_style"
+            android:key="note_style_key"
+            android:title="@string/choose_note_style"
+            app:iconTint="?attr/colorOnSecondaryContainer"
+            app:useSimpleSummaryProvider="true" />
+        <ListPreference
+            android:defaultValue="hh:mm:ss - dd/MM/yyyy"
+            android:entries="@array/time_format_array"
+            android:entryValues="@array/time_format_values"
+            android:icon="@drawable/ic_time_format"
+            android:key="time_format_key"
+            android:title="@string/choose_time_format"
+            app:iconTint="?attr/colorOnSecondaryContainer"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <!-- Removing ads -->
+    <Preference
+        android:icon="@drawable/ic_remove_ads"
+        android:key="remove_ads_key"
+        android:summary="@string/remove_ads_summary"
+        android:title="@string/remove_ads" />
+
+    <!-- Application style and theme -->
+    <PreferenceCategory
+        android:textColor="?attr/colorOnSecondaryContainer"
+        android:title="@string/style_theme_settings"
+        app:cardBackgroundColor="?attr/colorSecondaryContainer">
+
+        <com.example.shoppingAndNotesListApp.core.preferences.IconListPreference
+            android:defaultValue="blue_gray"
+            android:entries="@array/style_array"
+            android:entryValues="@array/style_values"
+            android:icon="@drawable/ic_color_style_on_surface"
+            android:key="app_theme"
+            android:title="@string/choose_style"
+            app:iconEntries="@array/style_array_icons"
+            app:iconSpaceReserved="true"
+            app:iconTint="?attr/colorOnSecondaryContainer"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            android:defaultValue="system"
+            android:entries="@array/theme_array"
+            android:entryValues="@array/theme_values"
+            android:icon="@drawable/ic_theme"
+            android:key="theme_mode"
+            android:title="@string/choose_theme"
+            app:iconTint="?attr/colorOnSecondaryContainer"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <!-- Note text settings -->
+    <PreferenceCategory
+        android:textColor="?attr/colorOnSecondaryContainer"
+        android:title="@string/note_text_settings"
+        app:cardBackgroundColor="?attr/colorSecondaryContainer">
+
+        <ListPreference
+            android:defaultValue="16"
+            android:entries="@array/text_size_array"
+            android:entryValues="@array/text_size_values"
+            android:icon="@drawable/ic_text_size"
+            android:key="title_size_key"
+            android:title="@string/title_note_text_size"
+            app:iconTint="?attr/colorOnSecondaryContainer"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            android:defaultValue="14"
+            android:entries="@array/text_size_array"
+            android:entryValues="@array/text_size_values"
+            android:icon="@drawable/ic_text_size"
+            android:key="content_size_key"
+            android:title="@string/content_note_text_size"
+            app:iconTint="?attr/colorOnSecondaryContainer"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

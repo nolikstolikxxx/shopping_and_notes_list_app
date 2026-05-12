@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Application typography -->
+    <style name="TextAppearance.App.BodyLarge" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textSize">@dimen/text_size_body_large</item>
+    </style>
+
+    <style name="TextAppearance.App.BodyMedium" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textSize">@dimen/text_size_body_medium</item>
+    </style>
+
+    <style name="TextAppearance.App.BodySmall" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textSize">@dimen/text_size_body_small</item>
+    </style>
+
+    <!-- Settings category names  -->
+    <style name="PreferenceCategoryTextStyle" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textSize">@dimen/text_size_body_large</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MyPreferenceTheme" parent="PreferenceThemeOverlay">
+        <item name="preferenceCategoryTitleTextAppearance">@style/PreferenceCategoryTextStyle</item>
+    </style>
+
+    <!-- Popup menu -->
+    <style name="AppPopupMenu" parent="Widget.Material3.PopupMenu">
+        <item name="android:popupBackground">?attr/colorSurface</item>
+    </style>
+
+    <!-- AppWindowAnimation -->
+    <style name="AppWindowAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <!-- App Dialog Style -->
+    <style name="AppDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+
+        <!-- dialogue background -->
+        <item name="background">?attr/colorSurface</item>
+
+        <!-- form of dialogue -->
+        <item name="shapeAppearanceMediumComponent">@style/DialogShape</item>
+
+        <!--
+        Dialog background  → colorSurface
+        Title text         → colorOnSurface
+        Body text          → colorOnSurface
+        Hint               → colorOnSurfaceVariant
+        Buttons            → colorPrimary
+        Input outline      → colorOutline
+        -->
+
+    </style>
+
+    <style name="DialogShape">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">28dp</item>
+    </style>
+
+    <style name="DialogTitle" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="DialogBody" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">?attr/colorOnSurface</item>
+
+    </style>
+
+    <style name="AppDialogButton" parent="Widget.Material3.Button.TextButton">
+
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+</resources>
