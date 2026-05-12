@@ -14,6 +14,18 @@ Shopping & Notes List App — современное Android-приложени�
 
 ---
 
+## 💡 Зачем был создан проект
+
+Этот проект был создан для практики:
+
+- масштабируемой Android-архитектуры
+- сложных взаимодействий с RecyclerView
+- UI-тестирования с использованием Espresso
+- динамического переключения тем
+- современных принципов Material Design
+
+---
+
 ## ✨ Возможности
 
 - 📝 Создание, редактирование и управление заметками
@@ -89,28 +101,29 @@ Shopping & Notes List App — современное Android-приложени�
 
 ## 📁 Структура проекта
 
+```text
 com.example.shoppingAndNotesListApp
 ├── core
-│ ├── billing
-│ ├── preferences
-│ └── utils
+│   ├── billing
+│   ├── preferences
+│   └── utils
 │
 ├── data
-│ ├── db
-│ │ ├── dao
-│ │ └── database
-│ ├── model
-│ └── repository
+│   ├── db
+│   │   ├── dao
+│   │   └── database
+│   ├── model
+│   └── repository
 │
 ├── ui
-│ ├── activities
-│ ├── fragments
-│ ├── adapters
-│ ├── dialogs
-│ └── viewmodel
+│   ├── activities
+│   ├── fragments
+│   ├── adapters
+│   ├── dialogs
+│   └── viewmodel
 │
 └── settings
-
+```
 
 ---
 
@@ -127,11 +140,21 @@ com.example.shoppingAndNotesListApp
 
 ## 🧪 Тестирование
 
-Пример UI-сценария:
+Проект содержит end-to-end UI тесты на Espresso:
 
-- Создание нескольких списков
-- Добавление элементов
-- Отметка выполненных
+- RecyclerViewActions
+- навигация между экранами
+- создание и редактирование заметок
+- создание shopping lists
+- удаление элементов
+- переключение тем и настроек
+- проверка стабильности пользовательских сценариев
+
+Основные тесты:
+
+- `FullUserFlowNotesTest`
+- `FullUserFlowSettingsTest`
+- `FullUserFlowTestShopList`
 
 ---
 

@@ -181,7 +181,6 @@ com.example.shoppingAndNotesListApp
 └── settings
 ```
 
-
 ---
 
 ## 🧭 Navigation
